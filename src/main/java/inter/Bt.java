@@ -9,6 +9,7 @@ import java.util.TreeSet;
 public class Bt {
 
 	public static void main(String[] args) {
+		System.out.println("Java Version: " + System.getProperty("java.version"));
 		int[] arr = { 15, 24, 48, 21, 43, 11, 79, 93 };
 		TreeSet<Integer> ts = new TreeSet<Integer>();
 		for (int a : arr) 
