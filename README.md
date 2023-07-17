@@ -16,12 +16,13 @@ git push origin master	--> 	used to add local repository files to central reposi
 git pull https://github.com/AcmeLakhan/TCSrc.git	--> used to pull all project to local repository
 -----------------------------------------------------------------------------------------------------
 git remote add origin https://github.com/AcmeLakhan/TCSrc.git	--> used to connect the connection between local git repository to github
+-----------------------------------------------------------------------------------------------------
 git remote remove origin 	--> 	used to disconnect the connection
-
-*** you can also use conection like custom name ***
-
-git remote add PayTm https://github.com/AcmeLakhan/TCSrc.git		
-git remote remove PayTm 
+-----------------------------------------------------------------------------------------------------
+#####################################################################################################
+-----------------------------------------------------------------------------------------------------
+git remote add PayTm https://github.com/AcmeLakhan/TCSrc.git	--> *** you can also use conection like custom name ***	
+git remote remove PayTm 	--> *** you can also use conection like custom name ***
 -----------------------------------------------------------------------------------------------------
 git remote -v 	--> used to  check the connect is established or not
 -----------------------------------------------------------------------------------------------------
