@@ -2,18 +2,20 @@ package demo;
 
 public class PalindromeNumber {
 	public static void main(String[] args) {
-		int number = 123;
-		int reminder, temp = 0, given = number;
+		int num = 123;
+		int copy = num;
+		int rem = 0;
+		int res;
 		
-		while(number>0) {
-			reminder = number%10;
-			temp = temp * 10 + reminder;
-			number = number/10;
+		while(num>0) {
+			res = num % 10;	
+			rem = rem * 10 + res;	
+			num = num / 10;	
 		}
-		if(given==temp) {
-			System.out.println("Given number is palindrome => " + given +" : "+ temp);
-		} else {
-			System.out.println("Given number is not palindrome => "  + given +" : "+ temp);
-		}
+		System.out.println(copy + " ==> " + rem);
+		if(copy==rem)
+			System.out.println("Given numbers are palindrome");
+		else
+			System.out.println("Given numbers are Not palindrome");
 	}
 }
