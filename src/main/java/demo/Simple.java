@@ -95,6 +95,7 @@ public class Simple {
 		wait.until(ExpectedConditions.elementToBeClickable(button));
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.findElement(By.xpath("//*[@id=\"Boy's cloths\"]"));
 		
 	}
 	

@@ -1,5 +1,6 @@
 package demo;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -47,6 +48,28 @@ public class AnagramString {
 		} else {
 			System.out.println("Both string are not ANAGRAM");
 		}
+	}
+
+	public static boolean isStringAnagramWithoutSort(String str1, String str2) {
+		boolean result = false;
+		if(str1.length()==str2.length()) {
+			String res = str1.replaceAll("["+str2+"]", "");
+			result = res.isEmpty();
+		}
+		return result;
+	}
+	
+	public static boolean isStringAnagramWithSort(String str1, String str2) {
+		char[] arr1 = null;
+		char[] arr2 = null;
+		if(str1.length()==str2.length()) {
+			arr1 = str1.toCharArray();
+			arr2 = str2.toCharArray();
+			
+			Arrays.sort(arr1);
+			Arrays.sort(arr2);
+		}
+		return Arrays.equals(arr1, arr2);
 	}
 
 }

@@ -21,7 +21,7 @@ public class BrockenLinks {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);
-		driver.get("https://www.hyrtutorials.com/");
+		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		
@@ -42,8 +42,6 @@ public class BrockenLinks {
 				System.out.println(linkURL + " => " + httpUrlConnection.getResponseCode() + " => " + httpUrlConnection.getResponseMessage() + " => " + counter);
 			}
 			counter++ ;
-			if(counter==50)
-				break;
 		}
 		driver.quit();
 	}
